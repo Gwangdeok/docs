@@ -16,6 +16,7 @@ export const baseOptions: BaseLayoutProps = {
       </span>
     ),
   },
+  githubUrl: "https://github.com/Gwangdeok",
   // see https://fumadocs.dev/docs/ui/navigation/links
   links: [],
 };
