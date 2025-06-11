@@ -2,3 +2,94 @@
 title: 처음 온 대원들에게
 description: 광덕방범대에 합류하기 위한 과정을 숙지해주세요.
 ---
+
+## 광덕방범대에 오신걸 환영합니다.
+
+광덕방범대에 참여하기 전 아래의 내용을 숙지해주세요.
+
+## 문서에 자기소개 추가하기
+
+현재 보고 계신 광덕 독스에 자신을 소개하는 문서를 추가해주세요. 아래와 같은 방법으로 추가할 수 있어요.
+
+### 1. Repository Fork하기
+
+문서를 수정하기 위해선 GitHub Repository에서 자신의 Repository로 Fork한 뒤에 Pull Request를 보내야해요.
+
+![](/docs/newbie/1.png)
+
+우선 위와 같이 [GitHub Repository](https://github.com/Gwangdeok/docs)에 접속해주세요. 그리고 상단의 `Fork` 버튼을 눌러주세요.
+
+![](/docs/newbie/2.png)
+
+`Fork` 버튼을 누른다면, 위와 같이 Fork에 대한 설정 페이지가 뜨게 되요. 내용을 확인한 뒤에 `Create fork` 버튼을 눌러주세요.
+
+![](/docs/newbie/3.png)
+
+Fork가 완료되었다면, 자신의 Repository에 광덕방범대 GitHub Repository에 있던 docs가 똑같이 복사되요. 완료되었다면, `Code` 버튼을 눌러 Repository의 url을 복사해주세요.
+
+### 2. Repository Clone하기
+
+이제 Fork된 Repository를 수정하기위해 Clone하는 과정이 필요해요.
+
+![](/docs/newbie/4.png)
+
+방금 복사했던 url을 넣어 여러분이 사용하는 환경에 Clone 해주세요.
+
+```bash
+git clone <방금 복사한 url>
+```
+
+Clone한 뒤에 docs 폴더가 생긴걸 확인할 수 있어요. 그리고 폴더를 IDE로 열어주세요.
+
+### 3. 자기소개 문서 복사하기
+
+![](/docs/newbie/5.png)
+
+IDE에서 `content/docs/introduce`에 접속한 뒤에 다른 방범대원의 파일을 복사해주세요.
+
+![](/docs/newbie/6.png)
+
+파일을 복사한 뒤에 파일 명을 `<자신의 GitHub 아이디>.mdx`로 변경해주세요. 그리고 meta 데이터의 title, description을 수정하고, 사진, 이름, 소속, GitHub, 이메일과 밑의 자신의 소개를 수정해주세요. 사진은 GitHub 사진을 url로 제시해주세요.
+
+![](/docs/newbie/7.png)
+
+GitHub 프로필을 우클릭한 뒤 이미지 주소 복사를 통해 GitHub 프로필 url을 얻을 수 있어요.
+![](/docs/newbie/8.png)
+
+그리고 만든 문서를 `content/docs/introduce/index.mdx`에 카드 형태로 추가해주세요. 이제 추가된 자신의 문서를 확인해볼게요.
+
+```bash
+pnpm install
+```
+
+위의 명령어를 통해 패키지들을 다운로드 해주세요.
+
+<Callout>패키지 매니저로는 pnpm을 사용해주세요.</Callout>
+
+```bash
+pnpm dev
+```
+
+그리고 위의 명령어를 통해 프로젝트를 실행할 수 있어요. `http://localhost:3000`에 접속하면 추가된 문서를 확인할 수 있어요.
+
+![](/docs/newbie/9.png)
+
+### 4. Pull Request 보내기
+
+이제 Pull Requset를 보내기 위해 Fork된 Repository로 commit을 해야 해요.
+
+![](/docs/newbie/10.png)
+
+변경된 문서 내용을 `+` 버튼을 눌러 스테이지에 올리고 commit 메세지를 작성해주세요.
+
+![](/docs/newbie/11.png)
+
+그리고 `push`버튼을 눌러 현재 commit 내용이 Fork된 Repository에 반영되도록 해주세요.
+
+![](/docs/newbie/12.png)
+
+commit이 반영되었다면 Fork된 Repository에서 `Contribute`버튼을 눌러 Pull Request를 보내주세요. 혹은 [광덕방범대 GitHub Repository](https://github.com/Gwangdeok/docs)에서 `Pull Request` 버튼을 눌러서 요청할 수도 있어요.
+
+![](/docs/newbie/13.png)
+
+Pull Request 내용을 작성하고, `Create pull request` 버튼을 누른다면, 방범대원들이 Pull Request 내용을 확인한 뒤에 Merge하여 기존 Repository와 병합할 거에요. 조금만 기다려주세요.
